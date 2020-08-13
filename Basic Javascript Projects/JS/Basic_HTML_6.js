@@ -11,11 +11,16 @@ function New_and_This() {
     document.write("Hello there");
 }
 
-function Person(first, last, age, height) {
+function Person (first, last, age, height) {
     this.firstName = first;
     this.lastName = last;
     this.age = age;
     this.height = height;
+}
+var Tim = new Person("Tim", "Timman", 35, "5'9")
+var Beth = new Person("Beth", "Lady", 22, "5'1")
+function pFunction() {
+    document.getElementById("Keywords_and_Constructors").innerHTML = "I think that " + Tim.firstName + Tim.lastName + " likes " + Beth.firstName + Beth.lastName;
 }
 
 function count_Function() {

@@ -5,5 +5,6 @@ function my_Dictionary() {
         Year:2018,
         Sound:"Vroom"
     };
-    document.getElementById("Dictionary").innerHTML = "I drive a" + Car.Model;
+    delete Car.Color;
+    document.getElementById("Dictionary").innerHTML = "I drive a " + Car.Color + Car.Model;
 }
