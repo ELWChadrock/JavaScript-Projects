@@ -43,4 +43,6 @@ function Time_function() {
     }
     document.getElementById("Time_of_day").innerHTML = Reply;
 }
-    console.error("-1");
+    console.log(X = 4);
+    console.log(X === 5);
+    console.log(V === 4);
