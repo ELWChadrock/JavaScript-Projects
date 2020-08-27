@@ -15,24 +15,20 @@
             
             // step 1: setup the xml http request object
             var ajax = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    document.getElementById("request").innerHTML = this.responseText;
-                }
-            }
+            
             
             // step 2: prepare the open ajax request
             ajax.open('GET', 'content.html');
 
             // step 3: define the ajax response callback method
-            ajax.onreadystatechange = funciton() {
+            ajax.onreadystatechange = function() {
                 if (ajax.readyState == 4) {
                     document.getElementById('content').innerHTML = ajax.responseText;
                 }
             }
 
             // step 4: send the ajax request for data
-            function.getContent() {
+            function getContent() {
                 ajax.send();
                 document.getElementById('btn_content').style.display = 'none';
             }
